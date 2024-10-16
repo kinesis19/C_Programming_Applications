@@ -20,7 +20,6 @@ int main(){
             result = num1 + num2;
             printf("The sum of %d and %d is %d. \n", num1, num2, result);
 
-            break;
 
         } else if (answer == 0){
             printf("Operation terminated. Exiting...\n");
