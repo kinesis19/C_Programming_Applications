@@ -9,6 +9,6 @@ int main() {
     double time = dist/speed; // 시간 계산
 
     printf("강속구가 홈플레이트에 도달하는 데 걸리는 시간: %f초\n", time);
-
-	return 0;
+    
+    return 0;
 }
