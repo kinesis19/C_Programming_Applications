@@ -8,7 +8,8 @@ int main() {
     double avg = 0;
 
     printf("이름: ");
-    scanf("%c", &name);
+    // scanf("%c", &name);
+    name = getchar();
 
     printf("학번: ");
     scanf("%d", &schoolId);
