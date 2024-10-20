@@ -3,16 +3,19 @@
 
 int main() {
 
-    int num1, num2, num3, largest;
+    char input;
+    printf("문자를 입력하시오: ");
+    input = getchar();
 
-    printf("3개의 정수를 입력하시오: ");
-    scanf("%d %d %d", &num1, &num2, &num3);
-
-    largest = num1;
-    if(largest < num2) largest = num2;
-    if(largest < num3) largest = num3;
-
-    printf("가장 큰 정수는 %d입니다.\n", largest);
+    if('A' <= input && input <= 'Z'){
+        printf("%c는 대문자입니다.\n", input);
+    }else if('a' <= input && input <= 'z'){
+        printf("%c는 소문자입니다.\n", input);
+    }else if('0' <= input && input <= '9'){
+        printf("%c는 숫자입니다.\n", input);
+    }else{
+        printf("%c는 기타 문자입니다.n", input);
+    }
 
     return 0;
 }
